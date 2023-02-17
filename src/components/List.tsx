@@ -1,11 +1,8 @@
+import { Sub } from "../types";
+
 // Typing the properties of my component. By default they are any
 interface Props {
-	subs: Array<{
-		nick: string; 
-		avatar: string;
-		subMonths: number;
-		description?: string;
-	}>
+	subs: Array<Sub>
 }
 
 // If the component receives childrens, use nameComponent: React.FC<Props>
